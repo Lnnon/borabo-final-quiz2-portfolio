@@ -1,0 +1,19 @@
+
+.navbar .logo {
+    color: #008cff; 
+    text-decoration: none;
+    font-size: 1.5rem; 
+    font-weight: bold;
+    font-size: xx-large;
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+    text-shadow: 0 0 3px rgba(0, 191, 255, 0.4);
+  }
+  
+ 
+  .navbar .logo:hover {
+    color: #00BFFF; 
+    text-shadow: 0 0 8px rgba(0, 191, 255, 0.7), 0 0 15px rgba(0, 191, 255, 0.5);
+    transform: scale(1.05);
+    transform: translateY(-2px);
+  }
+  

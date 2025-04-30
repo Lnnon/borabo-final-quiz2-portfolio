@@ -1,0 +1,113 @@
+@keyframes fadeInQuote {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 5px #00BFFF, 0 0 10px #00BFFF, 0 0 20px #00BFFF; }
+  50% { text-shadow: 0 0 10px #00BFFF, 0 0 20px #00BFFF, 0 0 30px #00BFFF; }
+  100% { text-shadow: 0 0 5px #00BFFF, 0 0 10px #00BFFF, 0 0 20px #00BFFF; }
+}
+
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #0B3D91, #1C4587);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #D1D5DB;
+  text-align: center;
+  overflow: hidden;
+}
+
+.intro h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+}
+
+.intro .highlight {
+  color: #00BFFF;
+  animation: glow 2s infinite;
+}
+
+.typewriter-text {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.quote-text {
+  font-size: 1.2rem;
+  color: #B0BEC5;
+  margin-top: 20px;
+  animation: fadeInQuote 4s infinite;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.home-button {
+  background-color: #007BFF;
+  padding: 14px 28px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3);
+}
+
+.home-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+/* Connect Section (below buttons) */
+.connect-section {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.connect-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.connect-subtitle {
+  font-size: 1.1rem;
+  color: #ffffffcc;
+  margin-bottom: 25px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  background-color: white;
+  color: #0B3D91;
+  border-radius: 50%;
+  padding: 14px;
+  font-size: 1.6rem;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  background-color: #00BFFF;
+  color: white;
+}

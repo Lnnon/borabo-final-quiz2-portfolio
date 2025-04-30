@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c1454566.chunk.css",
+    "main.js": "/static/js/main.c41c67c7.chunk.js",
+    "main.js.map": "/static/js/main.c41c67c7.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.52495798.chunk.js": "/static/js/2.52495798.chunk.js",
+    "static/js/2.52495798.chunk.js.map": "/static/js/2.52495798.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.94e4c4dc02287209197aac2b2ccc9f59.js": "/precache-manifest.94e4c4dc02287209197aac2b2ccc9f59.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.c1454566.chunk.css.map": "/static/css/main.c1454566.chunk.css.map",
+    "static/media/about.jpg": "/static/media/about.a4a5a309.jpg",
+    "static/media/totoro.jpeg": "/static/media/totoro.eaff4d4e.jpeg"
+  }
+}

@@ -1,0 +1,167 @@
+/* Buttons */
+.navbar button,
+.content button {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 25px;
+  background-color: #007BFF; /* Bold blue */
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navbar button:hover,
+.content button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Body */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #E6F0FF; /* Very light blue */
+  color: #0B3D91; /* Deep navy text */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center; /* Centers everything horizontally */
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #E6F0FF;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #007BFF;
+  text-decoration: none;
+  margin-right: 800px; /* Adds space between logo and nav links */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #0B3D91;
+  font-size: 1.1rem;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #007BFF;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #007BFF;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* Content */
+.content {
+  padding: 40px 20px;
+  min-height: 80vh;
+}
+
+.page {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.page > h1 {
+  font-size: 2.5rem;
+  color: #007BFF; /* Sky blue for headings */
+  margin-bottom: 20px;
+}
+
+.page > p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #0B3D91; /* Maintain dark navy text */
+}
+
+/* Projects */
+.projects {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #0B3D91; /* Midnight Horizon */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  text-align: center;
+  color: #D1D5DB; /* Silver-gray text */
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  color: #80CFFF; /* Lighter Sky Blue for project titles */
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #E6F0FF; /* Match navbar & home background */
+  font-size: 0.9rem;
+  color: #555;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+}
+
+/* Page Transitions */
+.page-transition {
+  opacity: 0;
+  transform: scale(0.95) translateY(30px);
+  filter: blur(8px);
+  transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.page-transition.show {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  filter: blur(0);
+}
